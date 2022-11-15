@@ -1,0 +1,173 @@
+@charset "utf-8";
+.contenedor{
+	display: grid;
+	grid-template-rows: 30px auto 200px 70px auto auto 400px 100px ;
+	grid-template-columns: 3% 1fr 1fr 1fr 1fr 3%;
+	grid-template-areas: 
+		"... men men men men ..."
+		"... banner banner banner banner ..."
+		"... titular titular titular titular ..."
+		"... textos textos textos textos ..."
+		"... fa fan fanc fancy ..."
+		"... fancyb fancybo fancybox fancyboxs ..."
+		"... video video texto texto ..."
+		"... pie pie pie pie ..."
+
+}
+.elem1 {
+	grid-area: men;
+}
+.elem2 {
+	grid-area: banner;
+}
+.elem3 {
+    grid-area: titular;
+    font-family: Montserrat, sans-serif;
+    padding: 2%;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: var(--bs-body-font-weight);
+}
+.elem4 {
+	grid-area: textos;
+	text-align: center;
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	
+}
+.elem5 {
+	grid-area: fa;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem6 {
+	grid-area: fan;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem7 {
+	grid-area: fanc;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem8 {
+	grid-area: fancy;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem5 img, .elem6 img, .elem7 img, .elem8 img {
+	width: 100%;
+	height: 100%;
+}
+	
+.elem9 {
+	grid-area: fancyb;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem10 {
+	grid-area: fancybo;	
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem11 {
+	grid-area: fancybox;	
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem12 {
+	grid-area: fancyboxs;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.elem9 img, .elem10 img, .elem11 img, .elem12 img {
+	width: 100%;
+	height: 100%;
+}
+.elem13 {
+	grid-area: video;	
+	margin-top: 55px;
+	margin-right: 10px;
+	margin-bottom: 55px;
+	margin-left: 10px;
+	padding: 2%;
+}
+.elem14 {
+	grid-area: texto;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding: 10%;
+	font-size: 18px;
+    line-height: 20px;
+	font-family: Montserrat, sans-serif;
+}
+.elem15 {
+	grid-area: pie;
+	display: flex;
+	background-color:#550151;
+	font-family: Montserrat, sans-serif;
+}
+.por {
+    flex-grow: 1;
+    text-align: center;
+    margin: 2%;
+    color: #FFFFFF;
+    font-family: "var(--bs-body-font-family)";
+	font-family: Montserrat, sans-serif;
+}
+.redes{
+	margin: 1%;
+}
+iframe {
+	width: 100%;
+	height: 100%;
+}
+@media(max-width:768px){
+	.contenedor{
+	display: grid;
+	grid-gap: 3px;
+	grid-template-rows: 30px auto auto 50px auto auto auto auto auto auto 100px ;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"men men"
+		"banner banner"
+		"titular titular"
+		"textos textos"
+		"fa fan"
+		"fanc fancy"
+		"fancyb fancybo"
+		"fancybox fancyboxs"
+		"video video"
+		"texto texto"
+		"pie pie"
+}
+	#qr{
+		display: none;
+	}
+}

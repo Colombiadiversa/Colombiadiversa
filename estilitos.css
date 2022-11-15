@@ -1,0 +1,118 @@
+@charset "utf-8";
+.contenedor{
+	display: grid;
+	grid-template-rows: 30px auto auto auto 100px ;
+	grid-template-columns: 3% 1fr 1fr 1fr 1fr 3%;
+	grid-template-areas: 
+		"... men men men men ..."
+		"... titular titular titular titular ..."
+		"... texto texto imagen imagen ..."
+		"... imagene imagene texti texti  ..."
+		"... pie pie pie pie ..."		
+}
+
+
+.elem1 {
+	grid-area: men;
+}
+.elem2 {
+	grid-area: titular;
+	font-family: Montserrat, sans-serif;
+    padding: 2%;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: var(--bs-body-font-weight);
+	text-align: center;
+}
+.elem3 {
+	grid-area: texto;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left:auto;
+	padding: 10%;
+	font-size: 18px;
+    line-height: 20px;
+	font-family: Montserrat, sans-serif;
+}
+.elem4 {
+	grid-area: imagen;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	align-content: center;
+}
+.img scr {
+	width: 100%;
+	height: 100%;
+}
+.elem5 {
+	grid-area: texti;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left:auto;
+	padding: 10%;
+	font-size: 18px;
+    line-height: 20px;
+	font-family: Montserrat, sans-serif;
+}
+.elem6 {
+	grid-area: imagene;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	align-content: center;
+}
+.elem7 {
+	grid-area: pie;
+	display: flex;
+	background-color:#550151;
+	font-family: Montserrat, sans-serif;
+	margin-top: auto;
+}
+
+.por {
+    flex-grow: 1;
+    text-align: center;
+    margin: 2%;
+    color: #FFFFFF;
+    font-family: "var(--bs-body-font-family)";
+	font-family: Montserrat, sans-serif;
+}
+.redes{
+	margin: 1%;
+}
+iframe {
+	width: 100%;
+	height: 100%;
+}
+@media(max-width:768px){
+	.contenedor{
+	display: grid;
+	grid-gap: 3px;
+	grid-template-rows: 30px auto auto auto auto auto auto auto auto 100px ;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		"men men"
+		"titular titular"
+		"texto texto"
+		"texto texto"
+		"imagen imagen"
+		"imagen imagen"
+		"imagene imagene"
+		"imagene imagene"
+		"texti texti"
+		"texti texti"
+		"pie pie"
+}
+	#qr{
+		display: none;
+	}
+}
